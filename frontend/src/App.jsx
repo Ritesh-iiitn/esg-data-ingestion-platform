@@ -26,7 +26,7 @@ function NavigationLayout({ children }) {
   return (
     <div className="flex h-screen bg-[#070c19] text-slate-100 overflow-hidden font-sans">
       {/* Sidebar Navigation */}
-      <aside className={`bg-[#0c1424]/60 border-r border-slate-900 flex flex-col justify-between z-10 glass transition-all duration-300 ease-in-out relative ${
+      <aside className={`bg-[#0c1424]/60 border-r border-slate-900 flex flex-col justify-between z-10 glass transition-all duration-300 ease-in-out relative shrink-0 ${
         isCollapsed ? 'w-20 px-3 py-6' : 'w-64 p-6'
       }`}>
         {/* Floating Sidebar Toggle Button - Perfectly centered vertically on the boundary */}
@@ -40,7 +40,7 @@ function NavigationLayout({ children }) {
 
         <div className="space-y-8">
           {/* Logo brand */}
-          <div className={`flex items-center gap-3 transition-all duration-300 ${isCollapsed ? 'justify-center' : ''}`}>
+          <div className={`flex items-center gap-3 mt-2 transition-all duration-300 ${isCollapsed ? 'justify-center' : ''}`}>
             <div className="p-2.5 rounded-xl bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 shrink-0 shadow-lg">
               <Leaf className="w-6 h-6 animate-pulse" />
             </div>
@@ -95,7 +95,7 @@ function NavigationLayout({ children }) {
           isCollapsed ? 'p-1.5 mx-auto' : 'p-4 space-y-2'
         }`}>
           <div className={`flex items-center transition-all duration-300 ${isCollapsed ? 'justify-center p-0.5' : 'gap-3'}`}>
-            <div className="w-8 h-8 rounded-full bg-slate-900 border border-slate-800 flex items-center justify-center font-bold text-emerald-400 text-sm shrink-0">
+            <div className="w-8 h-8 rounded-full bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center font-black text-emerald-400 text-xs shrink-0 shadow-inner">
               AN
             </div>
             {!isCollapsed && (

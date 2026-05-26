@@ -53,7 +53,7 @@ export default function StatusCard({ title, value, icon: Icon, color = 'slate', 
   const accentClass = ACCENTS[color] || '';
   
   return (
-    <div className={`glass bg-gradient-to-br ${styles.bg} border ${styles.border} ${accentClass} ${styles.glow} p-5 rounded-2xl shadow-lg relative overflow-hidden transition-all duration-300 hover:scale-[1.02] hover:shadow-xl`}>
+    <div className={`glass bg-gradient-to-br ${styles.bg} border ${styles.border} ${accentClass} ${styles.glow} p-5 pl-8 rounded-2xl shadow-lg relative overflow-hidden transition-all duration-300 hover:scale-[1.02] hover:shadow-xl`}>
       <div className="flex justify-between items-start">
         <div>
           <span className="text-xs font-semibold text-slate-400 uppercase tracking-wider">{title}</span>
