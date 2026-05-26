@@ -1,0 +1,16 @@
+transaction_id,employee_id,travel_date,category,origin,destination,distance_km,nights,amount_usd,vendor_name
+TX-90001,EMP-204,01/12/2024,Air,DEL,LHR,,0,1200.0,British Airways
+TX-90002,EMP-204,01/12/2024,Hotel,London,London,0,5,850.0,Hilton LHR
+TX-90003,EMP-108,01/15/2024,Car,LHR,Oxford,95.0,0,120.0,Hertz
+TX-90004,EMP-055,01/18/2024,Air,DEL,DXB,,0,450.0,Emirates
+TX-90005,EMP-055,01/18/2024,Hotel,Dubai,Dubai,0,3,620.0,Marriott DXB
+TX-90006,EMP-312,01/20/2024,Rail,BOM,SIN,3900.0,0,350.0,SMRT
+TX-90007,EMP-210,01/22/2024,Air,BOM,SIN,,0,550.0,Singapore Airlines
+TX-90008,EMP-210,01/22/2024,Hotel,Singapore,Singapore,0,4,920.0,Marina Bay Sands
+TX-90009,EMP-114,01/25/2024,Air,CDG,JFK,5840.0,0,1400.0,Air France
+TX-90010,EMP-114,01/25/2024,Hotel,New York,New York,0,6,1500.0,Sheraton JFK
+TX-90011,EMP-402,01/28/2024,Air,DEL,DEL,,0,0.0,Air India
+TX-90012,EMP-105,02/01/2024,Air,CDG,SIN,24000.0,0,2800.0,Singapore Airlines
+TX-90013,EMP-108,02/05/2024,Car,London,Bristol,,0,85.0,Enterprise
+TX-90014,EMP-204,02/10/2024,Rail,Paris,Brussels,310.0,0,95.0,Thalys
+TX-90015,EMP-055,02/12/2024,Hotel,Dubai,Dubai,0,0,0.0,No Show Hotel

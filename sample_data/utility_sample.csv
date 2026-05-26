@@ -1,0 +1,11 @@
+meter_id,site_name,billing_period_start,billing_period_end,consumption_kwh,consumption_unit,tariff_code,supplier_name
+MTR-88001,HQ Main Site,01/01/2024,31/01/2024,14200.0,kWh,COMM-T1,Apex Energy
+MTR-88001,HQ Main Site,01/02/2024,28/02/2024,15.2,MWh,COMM-T1,Apex Energy
+MTR-88002,Warehouse North,05/01/2024,04/02/2024,8450.0,kWh,IND-W3,Global Power
+MTR-88002,Warehouse North,05/02/2024,04/03/2024,9120.0,kWh,IND-W3,Global Power
+MTR-88003,Retail Hub,01/01/2024,31/01/2024,0.0,kWh,RET-S2,Global Power
+MTR-88003,Retail Hub,01/02/2024,28/02/2024,2350.0,kWh,RET-S2,Global Power
+MTR-88001,HQ Main Site,15/02/2024,15/03/2024,4200.0,kWh,COMM-T1,Apex Energy
+MTR-88002,Warehouse North,15/03/2024,15/04/2024,6700.0,kWh,IND-W3,Global Power
+MTR-88003,Retail Hub,10/03/2024,09/04/2024,2100.0,kWh,RET-S2,Global Power
+MTR-88001,HQ Main Site,01/04/2024,30/04/2024,13800.0,kWh,COMM-T1,Apex Energy

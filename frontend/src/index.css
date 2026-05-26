@@ -1,0 +1,277 @@
+/* Import premium Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* --- Futuristic Theme Reset & Typography --- */
+body {
+  font-family: 'Outfit', 'Inter', sans-serif;
+  background: radial-gradient(circle at 50% 50%, #0a0f1d 0%, #030712 100%) !important;
+  color: #f8fafc !important;
+  margin: 0;
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+/* Custom modern scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #030712;
+}
+::-webkit-scrollbar-thumb {
+  background: #1e293b;
+  border-radius: 6px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #10b981;
+}
+
+/* App Outer Shell Background Reset */
+.bg-\[\#0b0f19\] {
+  background: transparent !important;
+}
+
+/* --- Premium Elevated Glassmorphic Cards --- */
+.glass {
+  background: rgba(15, 23, 42, 0.45) !important;
+  backdrop-filter: blur(16px) !important;
+  -webkit-backdrop-filter: blur(16px) !important;
+  border: 1px solid rgba(255, 255, 255, 0.06) !important;
+  border-radius: 1.5rem !important; /* Spacious rounded corners */
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37) !important;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+}
+
+/* Lift-on-hover micro-animation with glowing shadows */
+.glass-hover {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+}
+.glass-hover:hover {
+  background: rgba(15, 23, 42, 0.6) !important;
+  border-color: rgba(16, 185, 129, 0.3) !important;
+  transform: translateY(-4px);
+  box-shadow: 0 20px 40px 0 rgba(16, 185, 129, 0.1) !important;
+}
+
+/* --- Fail-Proof Centered Modal --- */
+.custom-modal-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 9999 !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+  background-color: rgba(3, 7, 18, 0.8) !important; /* Soft, warm backdrop shadow */
+  backdrop-filter: blur(12px) !important;
+  transition: all 0.3s ease-in-out;
+}
+
+.custom-modal-card {
+  width: 100%;
+  max-width: 28rem;
+  background: rgba(15, 23, 42, 0.9) !important;
+  backdrop-filter: blur(20px) !important;
+  border: 1px solid rgba(255, 255, 255, 0.08) !important;
+  border-radius: 1.5rem !important;
+  overflow: hidden;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5) !important;
+  position: relative;
+  z-index: 10000 !important;
+  animation: modalScaleUp 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+@keyframes modalScaleUp {
+  from { transform: scale(0.95); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+
+/* --- Elegant Side Accents on Cards --- */
+.border-l-brand { border-left: 4px solid #10b981 !important; }
+.border-l-pending { border-left: 4px solid #6366f1 !important; }
+.border-l-flagged { border-left: 4px solid #f59e0b !important; }
+.border-l-rejected { border-left: 4px solid #f43f5e !important; }
+.border-l-slate { border-left: 4px solid #94a3b8 !important; }
+
+/* --- Table Styles & Smooth Hover slide --- */
+.bg-slate-900\/30 {
+  background-color: rgba(15, 23, 42, 0.6) !important; /* Premium clean header fill */
+  border-bottom: 2px solid rgba(255, 255, 255, 0.05) !important;
+}
+
+/* Make table rows feel alive with a subtle slide-right glow */
+tr.hover\:bg-slate-900\/35 {
+  transition: all 0.2s ease-in-out;
+}
+tr.hover\:bg-slate-900\/35:hover {
+  background-color: rgba(255, 255, 255, 0.02) !important;
+  transform: translateX(4px);
+  box-shadow: inset 4px 0 0 0 #10b981, 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Table Row Checked Background */
+.bg-emerald-950\/5 {
+  background-color: rgba(16, 185, 129, 0.04) !important; /* Soft green */
+  border-left: 3px solid #10b981 !important;
+}
+
+/* --- Clean Input Layouts --- */
+input[type="text"], textarea, select {
+  background-color: rgba(15, 23, 42, 0.6) !important;
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+  color: #ffffff !important;
+  border-radius: 1rem !important;
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1) !important;
+}
+input[type="text"]:focus, textarea:focus, select:focus {
+  border-color: #10b981 !important;
+  box-shadow: 0 0 0 4px rgba(16, 185, 129, 0.15) !important;
+  outline: none !important;
+}
+
+/* --- High-Contrast Badges --- */
+.bg-blue-500\/10 { background-color: rgba(59, 130, 246, 0.1) !important; border: 1px solid rgba(59, 130, 246, 0.2) !important; }
+.text-blue-400 { color: #60a5fa !important; }
+
+.bg-indigo-500\/10 { background-color: rgba(99, 102, 241, 0.1) !important; border: 1px solid rgba(99, 102, 241, 0.2) !important; }
+.text-indigo-400 { color: #818cf8 !important; }
+
+.bg-rose-500\/10 { background-color: rgba(244, 63, 94, 0.1) !important; border: 1px solid rgba(244, 63, 94, 0.2) !important; }
+.text-rose-400 { color: #fb7185 !important; }
+
+/* --- Auditing Call-to-Actions --- */
+.bg-emerald-500 {
+  background-color: #10b981 !important;
+  color: #030712 !important;
+  box-shadow: 0 4px 14px rgba(16, 185, 129, 0.3) !important;
+  transition: all 0.2s ease;
+  font-weight: 700;
+}
+.bg-emerald-500:hover {
+  background-color: #34d399 !important;
+  transform: translateY(-1px);
+  box-shadow: 0 6px 20px rgba(52, 211, 153, 0.4) !important;
+}
+
+.text-rose-400.border-rose-500\/20 {
+  background-color: rgba(244, 63, 94, 0.1) !important;
+  border: 1px solid rgba(244, 63, 94, 0.2) !important;
+  color: #fb7185 !important;
+  transition: all 0.2s ease;
+}
+.text-rose-400.border-rose-500\/20:hover {
+  background-color: #f43f5e !important;
+  color: #ffffff !important;
+  box-shadow: 0 4px 14px rgba(244, 63, 94, 0.3) !important;
+  transform: translateY(-1px);
+}
+
+/* --- General Font Color Remapping --- */
+.text-slate-100 {
+  color: #ffffff !important; /* Pure white main headings */
+  font-weight: 700;
+}
+.text-slate-200 {
+  color: #e2e8f0 !important; /* Secondary body text */
+}
+.text-slate-300 {
+  color: #cbd5e1 !important;
+}
+.text-slate-400 {
+  color: #94a3b8 !important; /* Muted descriptions */
+}
+.text-slate-500 {
+  color: #64748b !important; /* Captions */
+}
+.text-slate-600 {
+  color: #475569 !important;
+}
+.text-brand-300 {
+  color: #4ade80 !important; /* Emerald green footprints */
+  font-weight: 700;
+}
+.text-brand-400 {
+  color: #34d399 !important;
+}
+.text-indigo-300 {
+  color: #a5b4fc !important; /* Soft blue for audit log timelines */
+}
+
+/* Background elements */
+.bg-slate-950 { background-color: #030712 !important; }
+.bg-slate-900 { background-color: rgba(15, 23, 42, 0.6) !important; }
+.bg-slate-850 { background-color: rgba(30, 41, 59, 0.4) !important; }
+.border-slate-800, .border-slate-850, .border-slate-900 { border-color: rgba(255, 255, 255, 0.06) !important; }
+.bg-slate-900\/20 { background-color: rgba(15, 23, 42, 0.3) !important; border: 1px solid rgba(255, 255, 255, 0.05) !important; }
+.bg-slate-900\/10 { background-color: rgba(15, 23, 42, 0.15) !important; }
+.bg-slate-950\/40, .bg-slate-950\/60, .bg-slate-950\/45 { background-color: rgba(3, 7, 18, 0.4) !important; }
+
+/* Custom light-mode card gradients */
+.custom-card-emerald { background: linear-gradient(135deg, rgba(16, 185, 129, 0.08) 0%, rgba(4, 120, 87, 0.02) 100%) !important; border-left: 4px solid #10b981 !important; }
+.custom-card-indigo { background: linear-gradient(135deg, rgba(99, 102, 241, 0.08) 0%, rgba(67, 56, 202, 0.02) 100%) !important; border-left: 4px solid #6366f1 !important; }
+.custom-card-amber { background: linear-gradient(135deg, rgba(245, 158, 11, 0.08) 0%, rgba(180, 83, 9, 0.02) 100%) !important; border-left: 4px solid #f59e0b !important; }
+.custom-card-red { background: linear-gradient(135deg, rgba(239, 68, 68, 0.08) 0%, rgba(185, 28, 28, 0.02) 100%) !important; border-left: 4px solid #ef4444 !important; }
+.custom-card-rose { background: linear-gradient(135deg, rgba(244, 63, 94, 0.08) 0%, rgba(190, 18, 60, 0.02) 100%) !important; border-left: 4px solid #f43f5e !important; }
+.custom-card-slate { background: linear-gradient(135deg, rgba(148, 163, 184, 0.08) 0%, rgba(71, 85, 105, 0.02) 100%) !important; border-left: 4px solid #94a3b8 !important; }
+
+/* --- Premium Large-Scale Query Filters --- */
+.large-filter-input {
+  font-size: 1rem !important; /* Highly readable font */
+  font-weight: 600 !important;
+  padding: 1rem 1.25rem !important; /* Extra tall and wide spacing */
+  border-radius: 1.25rem !important; /* Perfect spacious curvature */
+  border: 2px solid rgba(255, 255, 255, 0.08) !important;
+  background-color: rgba(15, 23, 42, 0.8) !important;
+  color: #ffffff !important;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15) !important;
+  height: auto !important;
+  transition: all 0.25s ease-in-out !important;
+}
+
+.large-filter-input:hover {
+  border-color: rgba(16, 185, 129, 0.4) !important;
+  box-shadow: 0 8px 30px rgba(16, 185, 129, 0.08) !important;
+}
+
+.large-filter-input:focus {
+  border-color: #10b981 !important;
+  box-shadow: 0 0 0 5px rgba(16, 185, 129, 0.2) !important;
+}
+
+.large-filter-input-search {
+  padding-left: 3.5rem !important;
+}
+
+/* Accent highlight badge for query filter inputs on hover */
+.group:hover label {
+  color: #10b981 !important;
+  transition: color 0.2s ease;
+}
+
+/* Beautiful custom button pills */
+.bg-slate-100 {
+  background-color: rgba(255, 255, 255, 0.05) !important;
+  color: #cbd5e1 !important;
+  border: 1px solid rgba(255, 255, 255, 0.08) !important;
+}
+.bg-slate-100:hover {
+  background-color: rgba(255, 255, 255, 0.1) !important;
+  color: #ffffff !important;
+  border-color: rgba(16, 185, 129, 0.3) !important;
+}
+
+/* Custom animation helper */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(4px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.animate-fadeIn {
+  animation: fadeIn 0.3s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
